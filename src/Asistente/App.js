@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter,Routes, Route } from "react-router-dom";
 
-import maquinaria from './maquinaria';
+import Maquinaria from './Maquinaria';
 import { getListAsistente_mto, Areateasistente_mto } from './Servicie/AsistenteService';
 //import  UniversidadPage from './xxxx/ServiciesUniversidad';
 
@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
     
       <Routes>
-        <Route path="/asistente_mto" element={asistente_mtoPage} /> 
+        <Route path="/asistente_mto" element={Asistente_mtoPage} /> 
         <Route path="/maquinaria" element={<maquinariaPage />} />   
         
         

@@ -1,17 +1,17 @@
 const urlCrud = 'http://localhost:3001';
 
-const getListUniversidad = async () => {
-    const response = await fetch(`${urlCrud}/universidad`);    
+const getListAsistente_mto = async () => {
+    const response = await fetch(`${urlCrud}/asistente_mto`);    
     const data = await response.json();
     console.log(data)
     return  data;
 }
 
-const createmxxxxxx = async (universidad) => {
-    console.log(universidad);
-    const resp = await fetch(`${urlCrud}/universidad`, {
+const createAsistente_mto = async (asistente_mto) => {
+    console.log(asistente_mto);
+    const resp = await fetch(`${urlCrud}/asistente_mto`, {
         method: 'POST',
-        body: JSON.stringify(universidad),
+        body: JSON.stringify(asistente_mto),
         headers: {
             'Content-type': 'application/json'
         }
@@ -20,6 +20,6 @@ const createmxxxxxx = async (universidad) => {
 
 }
 export {
-    getListUniversidad,
-    createUniversidad
+    getListaAsistente_mto,
+    createAsistente_mto
 }
