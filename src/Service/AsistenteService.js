@@ -20,6 +20,6 @@ const createAsistente_mto = async (asistente_mto) => {
 
 }
 export {
-    getListaAsistente_mto,
+    getListAsistente_mto,
     createAsistente_mto
 }

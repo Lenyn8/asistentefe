@@ -1,5 +1,5 @@
 import "./Asistente.css";
-function Asignatura(props){
+function Maquinaria(props){
     
     return(
         <div className="container">
